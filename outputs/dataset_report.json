@@ -1,0 +1,32 @@
+{
+  "dataset_name": "Pakistani Architecture Historical Periods Benchmark",
+  "classes": [
+    "Mughal",
+    "Sikh",
+    "British Colonial",
+    "Modern / Post-1947"
+  ],
+  "target_distribution": {
+    "Mughal": 750,
+    "Sikh": 650,
+    "British Colonial": 700,
+    "Modern / Post-1947": 700,
+    "total_target": 2800
+  },
+  "benchmark_registry": {
+    "total_annotated_monuments": 48,
+    "unique_sites_catalogued": 32,
+    "splits": {
+      "train": "70% (group-isolated)",
+      "validation": "15% (group-isolated)",
+      "test": "15% (group-isolated)"
+    },
+    "group_leakage_protection": "Enforced: No building occurs across more than one split."
+  },
+  "data_cleaning_parameters": {
+    "min_resolution": "224x224 pixels",
+    "perceptual_hash_algorithm": "phash",
+    "hamming_threshold": 6,
+    "diagram_rejection_filter": "color variance & edge thresholding"
+  }
+}

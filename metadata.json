@@ -1,0 +1,6 @@
+{
+  "name": "Pakistani Architecture Classifier",
+  "description": "AI-powered computer vision system classifying Pakistani architectural heritage across Mughal, Sikh, British Colonial, and Modern eras with explainability and uncertainty calibration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

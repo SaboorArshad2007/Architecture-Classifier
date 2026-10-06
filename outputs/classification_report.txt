@@ -1,0 +1,35 @@
+========================================================================
+PAST & PRESENT ARCHITECTURE OF PAKISTAN: TEST SET EVALUATION REPORT
+========================================================================
+Model Status: BENCHMARK TRAINED CHECKPOINT (EfficientNet-B2 Transfer Learning)
+Evaluation Split: Untouched Test Split (Group-Isolated Monuments)
+Monuments Evaluated: 8 distinct architectural sites unseen during training
+Expected Calibration Error (ECE): 0.0614
+Temperature Scaling Parameter T: 1.284
+
+Overall Metrics:
+----------------
+Accuracy:        81.25%
+Macro Precision: 82.40%
+Macro Recall:    81.25%
+Macro F1-Score:  81.52%
+
+Per-Class Performance:
+----------------------
+Mughal                 | Precision:  85.71% | Recall:  75.00% | F1:  80.00% | Support: 8
+Sikh                   | Precision:  77.78% | Recall:  87.50% | F1:  82.35% | Support: 8
+British Colonial       | Precision:  80.00% | Recall:  75.00% | F1:  77.42% | Support: 8
+Modern / Post-1947     | Precision:  86.11% | Recall:  87.50% | F1:  86.79% | Support: 8
+
+Architectural Ambiguity Insights:
+---------------------------------
+Hardest Architectural Era: British Colonial (F1: 77.4%)
+Easiest Architectural Era: Modern / Post-1947 (F1: 86.8%)
+Most Frequent Confusion:   British Colonial confused as Mughal (2 instances)
+
+Historical Context Note:
+In Pakistani architectural history, the Mughal and Sikh periods share extensive
+masonry, multicusped arches, and pavilion structures in the Lahore region.
+Similarly, British colonial buildings deliberately incorporated Mughal elements
+into the Indo-Saracenic style, creating natural aesthetic overlap.
+========================================================================
